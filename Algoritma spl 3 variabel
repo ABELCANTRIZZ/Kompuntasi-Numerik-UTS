@@ -1,0 +1,19 @@
+ALGORITMA SPL 3 VARIABEL (ELIMINASI GAUSS + PIVOTING PARSIAL)
+
+Input : matriks A (3x3), vektor b (3)
+Output: x, y, z
+
+1. Bentuk matriks augmented M = [A | b].
+2. Untuk k = 1 sampai 2:
+   a. Cari baris p (k..3) dengan |M[p,k]| terbesar.
+   b. Jika |M[p,k]| ~ 0, berhenti: tidak ada solusi tunggal.
+   c. Tukar baris k dan baris p.
+   d. Untuk i = k+1 sampai 3:
+      faktor = M[i,k] / M[k,k]
+      baris i = baris i - faktor * baris k
+3. Jika M[3,3] ~ 0, berhenti: tidak ada solusi tunggal.
+4. Substitusi mundur:
+   z = M[3,4] / M[3,3]
+   y = (M[2,4] - M[2,3]*z) / M[2,2]
+   x = (M[1,4] - M[1,2]*y - M[1,3]*z) / M[1,1]
+5. Verifikasi: hitung A*x dan bandingkan dengan b.
