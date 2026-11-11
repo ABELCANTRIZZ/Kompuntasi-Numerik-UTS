@@ -1,0 +1,11 @@
+ALGORITMA METODE BISECTION
+
+Input : fungsi f, selang [a, b], toleransi tol, iterasi maksimum N
+Output: hampiran akar c
+
+1. Jika f(a)*f(b) > 0, berhenti: akar tidak dijamin pada selang.
+2. Untuk i = 1 sampai N:
+   a. c = (a + b) / 2
+   b. Jika f(c) = 0 atau (b - a)/2 < tol, berhenti dan kembalikan c.
+   c. Jika f(a)*f(c) < 0 maka b = c, selain itu a = c.
+3. Kembalikan c sebagai hampiran akar.
