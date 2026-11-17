@@ -1,0 +1,30 @@
+DAFTAR PROMPT AI - KOMPUTASI NUMERIK
+Platform AI yang digunakan: Claude/Copilot/Gemini
+Tanggal: 10-11-2026
+ 
+=== BAGIAN A: SISTEM PERSAMAAN LINEAR 3 VARIABEL ===
+ 
+[Prompt A1 - Algoritma]
+Saya mahasiswa yang sedang belajar Komputasi Numerik. Tolong jelaskan algoritma
+menyelesaikan sistem persamaan linear dengan 3 variabel memakai eliminasi Gauss
+dan pivoting parsial. Tulis langkah-langkahnya secara berurutan dalam bahasa
+Indonesia yang sederhana, lengkap dengan input dan output algoritma.
+ 
+
+ 
+=== BAGIAN B: PERSAMAAN NON LINEAR - METODE BISECTION ===
+
+ 
+[Prompt B1 - Kode Python di Google Colab]
+Buatkan kode Python Google Colab untuk metode Bisection berdasarkan algoritma
+tadi, dibagi menjadi beberapa cell. Tampilkan tabel iterasi (a, b, c, f(c))
+dengan pandas dan grafik fungsi beserta akarnya dengan matplotlib. Gunakan
+fungsi contoh yang berbeda dari x^3 - x - 2.
+ 
+[Prompt B2 - Penjelasan tiap baris]
+Tambahkan komentar penjelasan di setiap baris kode dan penjelasan markdown di
+setiap cell, dalam bahasa Indonesia.
+ 
+[Prompt B3 - Pengecekan]
+Periksa kode Bisection tadi: apa yang terjadi jika f(a) dan f(b) bertanda sama,
+atau jika toleransi terlalu kecil? Tambahkan penanganan yang sesuai.
